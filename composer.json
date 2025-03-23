@@ -1,9 +1,6 @@
 {
-    "name": "jivan/dwes06_cliente",
+    "name": "dawdistancia/titulaciones",
     "type": "project",
-    "require": {
-        "wsdl2phpgenerator/wsdl2phpgenerator": "^3.4"
-    },
     "autoload": {
         "psr-4": {
             "Clases\\": "src/"
@@ -14,5 +11,15 @@
             "name": "Iván",
             "email": "jivanrod@gmail.com"
         }
-    ]
+    ],
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    },
+    "require": {
+        "phpro/soap-client": "3.3.0",
+        "symfony/http-client": "^6.4",
+        "nyholm/psr7": "^1.8"
+    }
 }
